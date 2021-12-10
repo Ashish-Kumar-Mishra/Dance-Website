@@ -1,0 +1,58 @@
+extends base.pug 
+
+block scripts
+  script(src='/static/index.js') 
+
+block style 
+    style
+      include ../static/style.css 
+
+block content 
+    section#introSection
+      div Welcome to A.K Mishra's Dance Academy 
+      div.small Feel Dance in Your Blood  
+
+    section#missionSection 
+      h2 Our Mission
+      div.card 
+        h3 Dance Perfection
+         div.card-box
+                div.card-img
+                    img(src="/static/img/1.png")
+                div.card-content
+                    p This is the best dance academy of the World
+       
+
+      div.card  
+        h3 Dance from Heart 
+         div.card-box
+                div.card-img
+                    img(src="/static/img/logo.png")
+                div.card-content
+                    p Learn dance from our Heart with us
+       
+       
+      div.card 
+        h3 Dance like Expert 
+         div.card-box
+                div.card-img
+                    img(src="/static/img/3.png")
+                div.card-content
+                    p Best teacher and provide guidance to everyone
+       
+        
+
+    section#sponsorsSection
+      h2 Our Sponsers 
+      div#sponsers 
+        img(src="/static/img/logo1.png" ,alt="sponser img" ,class="spimage")
+        img(src="/static/img/logo2.png" ,alt="sponser img" ,class="spimage")
+        img(src="/static/img/logo3.png" ,alt="sponser img" ,class="spimage")
+        img(src="/static/img/logo4.png" ,alt="sponser img" ,class="spimage")
+
+    //- footer#footer 
+    //-   | @copyright from AshishDanceAcademy.com.
+
+    script
+      include ../static/index.js
+
